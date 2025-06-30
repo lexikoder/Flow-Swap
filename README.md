@@ -64,3 +64,20 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+<!-- function amountOftokenIn(address tokenIn,address tokenOut,uint amountTokenIn)public view returns(uint) {
+        address  pairAddress = IFactory(factory)._pairAddress(tokenIn,tokenOut);
+        address tokenB = IPair(pairAddress).tokenB(); 
+        uint tokenAtotalBal = IPair(pairAddress).tokenATotalBal();
+        uint tokenBtotalBal = IPair(pairAddress).tokenBTotalBal();
+         uint tokenAmountOut;
+        uint fee = IFactory(factory).fee();
+        
+        if (tokenB == tokenIn){
+         tokenAmountOut =  swapMAth.swapToTokenA(amountTokenIn,tokenAtotalBal,tokenBtotalBal,fee);
+        }else{
+          tokenAmountOut =  swapMAth.swapToTokenA(amountTokenIn,tokenBtotalBal,tokenAtotalBal,fee);
+        }
+        
+        return  tokenAmountOut;
+    } -->
