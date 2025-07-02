@@ -1,3 +1,12 @@
+## Contract Addresses:
+- Router: 0x3a45175B6dF92B7ECd949301d09Ff7a5C8A58a46
+- Factory: 0x4Bb463407889Dcac3Bc9C96C8c24f5ce575aF480
+
+Sepolia Testnet :
+- Router: https://sepolia.etherscan.io/address/0x3a45175B6dF92B7ECd949301d09Ff7a5C8A58a46
+- Factory: https://sepolia.etherscan.io/address/0x4Bb463407889Dcac3Bc9C96C8c24f5ce575aF480
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
@@ -65,19 +74,4 @@ $ anvil --help
 $ cast --help
 ```
 
-<!-- function amountOftokenIn(address tokenIn,address tokenOut,uint amountTokenIn)public view returns(uint) {
-        address  pairAddress = IFactory(factory)._pairAddress(tokenIn,tokenOut);
-        address tokenB = IPair(pairAddress).tokenB(); 
-        uint tokenAtotalBal = IPair(pairAddress).tokenATotalBal();
-        uint tokenBtotalBal = IPair(pairAddress).tokenBTotalBal();
-         uint tokenAmountOut;
-        uint fee = IFactory(factory).fee();
-        
-        if (tokenB == tokenIn){
-         tokenAmountOut =  swapMAth.swapToTokenA(amountTokenIn,tokenAtotalBal,tokenBtotalBal,fee);
-        }else{
-          tokenAmountOut =  swapMAth.swapToTokenA(amountTokenIn,tokenBtotalBal,tokenAtotalBal,fee);
-        }
-        
-        return  tokenAmountOut;
-    } -->
+
